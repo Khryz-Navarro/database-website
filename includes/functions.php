@@ -12,13 +12,13 @@ function sendResetEmail($to, $resetLink) {
         $mail->isSMTP();
         $mail->Host = 'smtp-relay.brevo.com';  // Set the SMTP server to send through
         $mail->SMTPAuth = true;
-        $mail->Username = '7ada8f001@smtp-brevo.com'; // SMTP username
-        $mail->Password = 'FHPMNGZkEOCbAdqV';  // SMTP password
+        $mail->Username = ''; // SMTP username
+        $mail->Password = '';  // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Recipients
-        $mail->setFrom('miggymiggy231@gmail.com', 'Mailer');
+        $mail->setFrom('', 'Mailer');
         $mail->addAddress($to);
 
         // Content
